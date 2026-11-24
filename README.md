@@ -9,6 +9,10 @@ This project analyses **128,943 cleaned sales records** from an Amazon sales dat
 The Power BI report contains two pages:
 - **Sales Overview:** overall sales, order volume, product categories, order status, city-level sales and fulfilment.
 - **Business Performance:** cancellation rate, B2B order share, promotion usage, fulfilment/status breakdowns and average amount by category.
+<img width="452" height="409" alt="Screenshot 2026-11-25 021057" src="https://github.com/user-attachments/assets/d1754895-dc13-4105-812d-a55a39833c73" />
+<img width="540" height="407" alt="Screenshot 2026-11-25 021137" src="https://github.com/user-attachments/assets/f57a9324-3d16-41f6-b4c8-9c73f8c43275" />
+
+
 
 ## Tools & Technologies
 
