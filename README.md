@@ -7,12 +7,15 @@ An end-to-end data analytics project using **Microsoft Excel, MySQL and Power BI
 This project analyses **128,943 cleaned sales records** from an Amazon sales dataset. The workflow covers data cleaning and preparation in Excel, data storage and querying in MySQL, and interactive business reporting in Power BI.
 
 The Power BI report contains two pages:
-- **Sales Overview:** overall sales, order volume, product categories, order status, city-level sales and fulfilment.
-- **Business Performance:** cancellation rate, B2B order share, promotion usage, fulfilment/status breakdowns and average amount by category.
-<img width="452" height="409" alt="Screenshot 2026-11-25 021057" src="https://github.com/user-attachments/assets/d1754895-dc13-4105-812d-a55a39833c73" />
-<img width="540" height="407" alt="Screenshot 2026-11-25 021137" src="https://github.com/user-attachments/assets/f57a9324-3d16-41f6-b4c8-9c73f8c43275" />
 
+- **Sales Overview:** Overall sales, order volume, product categories, order status, city-level sales and fulfilment.
+- **Business Performance:** Cancellation rate, B2B order share, promotion usage, fulfilment/status breakdowns and average amount by category.
 
+### Dashboard Preview
+
+<img width="452" alt="Sales Overview Dashboard" src="https://github.com/user-attachments/assets/d1754895-dc13-4105-812d-a55a39833c73" />
+
+<img width="540" alt="Business Performance Dashboard" src="https://github.com/user-attachments/assets/f57a9324-3d16-41f6-b4c8-9c73f8c43275" />
 
 ## Tools & Technologies
 
@@ -20,12 +23,29 @@ The Power BI report contains two pages:
 - **MySQL:** Data storage, SQL querying, analysis and creation of an analysis view
 - **Power BI:** Data modelling, DAX measures, calculated columns and interactive dashboard development
 
+## Project Files
+
+### Excel Files
+
+- [Raw Amazon Sales Data](Excel/Amazon_Sales_Raw_Data.xlsx) — Original source data retained without modification.
+- [Cleaned Amazon Sales Data](Excel/Amazon_Sales_Cleaned.xlsx) — Prepared dataset and supporting data-quality work.
+
+### SQL Files
+
+- [01 — Create Analysis View](SQL/01_Create_Analysis_View.sql)
+- [02 — Core SQL Analysis](SQL/02_Core_SQL_Analysis.sql)
+- [03 — Advanced Business Analysis](SQL/03_Advance%20_Business_Analysis.sql)
+
+### Power BI Dashboard
+
+- [Amazon Sales Dashboard (.pbix)](Dashboard/Amazon_Sales_Dashboard.pbix)
+
 ## Dataset Summary
 
 | Item | Value |
 |---|---:|
-| Cleaned records | 128,943 |
-| Distinct orders | 120,352 |
+| Cleaned Records | 128,943 |
+| Distinct Orders | 120,352 |
 | Columns | 22 |
 
 ## Key Performance Indicators
@@ -70,6 +90,7 @@ The Power BI report contains two pages:
 The MySQL workflow uses a cleaned raw table and a reusable view named `amazon_sales_analysis`. The view standardises the order date and converts quantity and amount fields into usable numeric values where valid.
 
 Analysis includes:
+
 - Record counts and data-quality checks
 - Order status and product category distributions
 - Sales and average amount by category
