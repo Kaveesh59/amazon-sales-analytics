@@ -13,9 +13,9 @@ The Power BI report contains two pages:
 
 ### Dashboard Preview
 
-<img width="452" alt="Sales Overview Dashboard" src="https://github.com/user-attachments/assets/d1754895-dc13-4105-812d-a55a39833c73" />
+<img width="452" height="409" alt="Screenshot 2026-11-25 021057" src="https://github.com/user-attachments/assets/fbc151ae-4995-4a8b-a9f8-5884e5215fb7" />
 
-<img width="540" alt="Business Performance Dashboard" src="https://github.com/user-attachments/assets/f57a9324-3d16-41f6-b4c8-9c73f8c43275" />
+<img width="540" height="407" alt="Screenshot 2026-11-25 021137" src="https://github.com/user-attachments/assets/01af708a-c086-4d84-8c96-5b773f7fcbf6" />
 
 ## Tools & Technologies
 
