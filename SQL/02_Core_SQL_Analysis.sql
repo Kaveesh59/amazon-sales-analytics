@@ -80,41 +80,17 @@ GROUP BY fulfilment
 ORDER BY total_records DESC;
 
 
--- 5.7 B2B vs Non-B2B
-SELECT b2b, COUNT(*) AS total_records
-FROM amazon_sales_analysis
-GROUP BY b2b;
-
-
--- 5.8 Product Size Distribution
+-- 5.7 Product Size Distribution
 SELECT size, COUNT(*) AS total_records
 FROM amazon_sales_analysis
 GROUP BY size
 ORDER BY total_records DESC;
 
 
--- 5.9 Average Amount by Category
-SELECT category, ROUND(AVG(amount_clean), 2) AS average_amount
-FROM amazon_sales_analysis
-WHERE amount_clean IS NOT NULL
-GROUP BY category
-ORDER BY average_amount DESC;
-
-
--- 5.10 Quantity by Category
+-- 5.8 Quantity by Category
 SELECT category, SUM(qty_clean) AS total_quantity
 FROM amazon_sales_analysis
 WHERE qty_clean IS NOT NULL
 GROUP BY category
 ORDER BY total_quantity DESC;
 
-
--- 5.11 Monthly Sales Trend
-SELECT
-    DATE_FORMAT(order_date_clean, '%Y-%m') AS sales_month,
-    ROUND(SUM(amount_clean), 2) AS revenue
-FROM amazon_sales_analysis
-WHERE order_date_clean IS NOT NULL
-AND amount_clean IS NOT NULL
-GROUP BY sales_month
-ORDER BY sales_month;
