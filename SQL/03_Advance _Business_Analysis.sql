@@ -1,15 +1,5 @@
 /* ADVANCE ANALYSIS */
 
-/* QUANTITY SOLD BY CATEGORY */
-
-SELECT category,
-    SUM(qty_clean) AS total_quantity
-FROM amazon_sales_analysis
-WHERE qty_clean IS NOT NULL
-GROUP BY category
-ORDER BY total_quantity DESC;
-
-
 /* MONTHLY SALES TREND */
 
 SELECT DATE_FORMAT(
